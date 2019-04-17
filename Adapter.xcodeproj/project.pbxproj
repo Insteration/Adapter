@@ -12,6 +12,11 @@
 		D9035196226722D3009A1447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9035194226722D3009A1447 /* Main.storyboard */; };
 		D9035198226722D7009A1447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9035197226722D7009A1447 /* Assets.xcassets */; };
 		D903519B226722D7009A1447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9035199226722D7009A1447 /* LaunchScreen.storyboard */; };
+		D90351A322672603009A1447 /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90351A222672603009A1447 /* GoogleAuth.swift */; };
+		D90351A522672718009A1447 /* TwitterAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90351A422672718009A1447 /* TwitterAuth.swift */; };
+		D90351A8226727DD009A1447 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90351A7226727DC009A1447 /* AuthService.swift */; };
+		D90351AD2267291D009A1447 /* GoogleAuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90351AC2267291D009A1447 /* GoogleAuthAdapter.swift */; };
+		D90351AF22672AF9009A1447 /* TwitterAuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90351AE22672AF9009A1447 /* TwitterAuthAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		D9035197226722D7009A1447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D903519A226722D7009A1447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D903519C226722D7009A1447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90351A222672603009A1447 /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
+		D90351A422672718009A1447 /* TwitterAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuth.swift; sourceTree = "<group>"; };
+		D90351A7226727DC009A1447 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		D90351AC2267291D009A1447 /* GoogleAuthAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthAdapter.swift; sourceTree = "<group>"; };
+		D90351AE22672AF9009A1447 /* TwitterAuthAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +64,33 @@
 		D903518F226722D3009A1447 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				D90351A9226728F2009A1447 /* Adapter */,
 				D9035190226722D3009A1447 /* AppDelegate.swift */,
 				D9035192226722D3009A1447 /* ViewController.swift */,
+				D90351A622672751009A1447 /* Auth */,
 				D9035194226722D3009A1447 /* Main.storyboard */,
 				D9035197226722D7009A1447 /* Assets.xcassets */,
 				D9035199226722D7009A1447 /* LaunchScreen.storyboard */,
 				D903519C226722D7009A1447 /* Info.plist */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		D90351A622672751009A1447 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D90351A222672603009A1447 /* GoogleAuth.swift */,
+				D90351A422672718009A1447 /* TwitterAuth.swift */,
+				D90351A7226727DC009A1447 /* AuthService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D90351A9226728F2009A1447 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				D90351AC2267291D009A1447 /* GoogleAuthAdapter.swift */,
+				D90351AE22672AF9009A1447 /* TwitterAuthAdapter.swift */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -136,7 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9035193226722D3009A1447 /* ViewController.swift in Sources */,
+				D90351A522672718009A1447 /* TwitterAuth.swift in Sources */,
+				D90351AD2267291D009A1447 /* GoogleAuthAdapter.swift in Sources */,
+				D90351AF22672AF9009A1447 /* TwitterAuthAdapter.swift in Sources */,
+				D90351A8226727DD009A1447 /* AuthService.swift in Sources */,
 				D9035191226722D3009A1447 /* AppDelegate.swift in Sources */,
+				D90351A322672603009A1447 /* GoogleAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
